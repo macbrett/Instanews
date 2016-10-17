@@ -1,11 +1,11 @@
 
 $(function() {
   $('select').on('change', function() {
-
-    //$('img').toggleClass("small-logo", "large-logo", 2000, "easeOutQuad");
+ $('.stories ul').empty();
+    //$('img').toggleClass("small-logo", "large-logo",);
     //$('header').toggleClass("site-header-small", "site-header-large", 2000, "easeOutQuad");
 
-    $( "img" ).removeClass( "large-logo" ).addClass( "small-logo" );
+    $( "img" ).removeClass( "large-logo", 1000, "easeOutQuad").addClass( "small-logo", 1000, "easeOutQuad");
 
     var select = $('#sections').val();
     console.log(select)
@@ -25,12 +25,12 @@ if (data.results.length === 0) {
             return item.multimedia.length;
           }).splice(0, 12);
 
+
+
             news.forEach(function(item, index) {
             $('.stories ul').append('<li class="news' + index +'"><div class="inner-item-wrapper"><a href="' +
-              item.url + '"><div class="article story-' + index +'"><div class="story-meta"><p>' + item.abstract + '</p></div></div></a></div></li>');
-
-
-
+              item.url + '"><div class="article story-' + index +'"><div class="story-meta"><p>' +
+              item.abstract + '</p></div></div></a></div></li>');
 
             img = item.multimedia[4];
             $('.story-' + index).css('background-image', 'url("' + img.url + '")');
