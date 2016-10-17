@@ -5,7 +5,7 @@ $(function() {
     //$('img').toggleClass("small-logo", "large-logo",);
     //$('header').toggleClass("site-header-small", "site-header-large", 2000, "easeOutQuad");
 
-    $( "img" ).removeClass( "large-logo", 1000, "easeOutQuad").addClass( "small-logo", 1000, "easeOutQuad");
+    $( "img" ).removeClass( "large-logo").addClass( "small-logo");
 
     var select = $('#sections').val();
     console.log(select)
