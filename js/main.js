@@ -2,8 +2,8 @@
 $(function() {
   $('select').on('change', function() {
 
-    $('img').toggleClass("small-logo", "large-logo", 1000, "easeOutQuad");
-    $('header').toggleClass("site-header-small", "site-header-large", 1000, "easeOutQuad");
+    $('img').toggleClass("small-logo", "large-logo", 2000, "easeOutQuad");
+    $('header').toggleClass("site-header-small", "site-header-large", 2000, "easeOutQuad");
 
 
     var select = $('#sections').val();
