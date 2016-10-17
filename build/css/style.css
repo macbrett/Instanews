@@ -298,8 +298,8 @@ Tablet Display
     flex-direction: row;
     width: 80%; }
   .small-logo {
-    height: 30%;
-    width: 30%;
+    height: 50%;
+    width: 50%;
     text-align: center; }
   /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 STORY-GRID
@@ -337,8 +337,8 @@ Desktop Display
   .large-logo {
     transition: all .5s .5s ease-out; }
   .small-logo {
-    height: 80%;
-    width: 80%;
+    height: 60%;
+    width: 60%;
     text-align: center; }
   .screen-reader {
     border: 0;
