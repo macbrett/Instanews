@@ -16,7 +16,7 @@ $(function() {
     }).done(function(data) {
 
 if (data.results.length === 0) {
-          $('.story-grid').append("<p>Sorry, nothing found! Please try again.</p>");
+          $('.story-grid').append("<p>There appears to be no stories in this section.</p>");
         }
         else {
           var news = data.results;
