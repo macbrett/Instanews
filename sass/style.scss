@@ -202,6 +202,11 @@ text-align: center;
 .search-form select{
     font-size: 2rem;
 }
+
+.site-footer .copyright p:before {
+    content:'\00a9';
+}
+
 .site-footer span{
     text-transform:uppercase;
 }
