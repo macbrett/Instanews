@@ -43,6 +43,7 @@ gulp.task('sass', function() {
 
 gulp.task('scripts', function(){
     gulp.src('./js/*.js')
+  .pipe(plumber(plumberErrorHandler))
       .pipe(uglify())
       .pipe(rename({
         extname: '.min.js'
@@ -52,11 +53,13 @@ gulp.task('scripts', function(){
 
 gulp.task('jscs', function () {
    return gulp.src('./js/*.js')
+  .pipe(plumber(plumberErrorHandler))
        .pipe(jscs('.jscsrc'));
 });
 
 gulp.task('lint', function() {
   return gulp.src('./js/*.js')
+  .pipe(plumber(plumberErrorHandler))
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'));
 });
