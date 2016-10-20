@@ -8,7 +8,7 @@ $(function() {
     $( "img" ).removeClass( "large-logo").addClass( "small-logo");
 
     var select = $('#sections').val();
-    console.log(select)
+
 
     $.ajax({
 
