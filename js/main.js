@@ -1,4 +1,6 @@
 
+
+
 $(function() {
   $('select').on('change', function() {
  $('.stories ul').empty();
@@ -7,7 +9,7 @@ $(function() {
 
     $( "img" ).removeClass( "large-logo").addClass( "small-logo");
 
-    var select = $('#sections').val();
+    let select = $('#sections').val();
     console.log(select)
 
     $.ajax({
@@ -20,7 +22,7 @@ if (data.results.length === 0) {
           $('.story-grid').append("<p>There appears to be no stories in this section.</p>");
         }
         else {
-          var news = data.results;
+          let news = data.results;
           news = news.filter(function(item) {
             return item.multimedia.length;
           }).splice(0, 12);
