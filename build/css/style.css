@@ -70,6 +70,8 @@ table {
   font-weight: normal;
   font-style: italic; }
 
+
+
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 CUSTOM CSS
@@ -271,12 +273,12 @@ Tablet Display
     flex-direction: row; }
   .site-header-small {
     -ms-flex-align: left;
-    align-items: left;
+   
     height: 100px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: left;
-    justify-content: left;
+    
     -ms-flex-direction: row;
     flex-direction: row;
     width: 80%; }
@@ -340,3 +342,5 @@ Desktop Display
     flex: 0 1 25%; }
   .site-footer {
     text-align: left; } }
+
+
