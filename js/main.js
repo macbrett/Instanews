@@ -1,12 +1,20 @@
 
 
 
-$(function() {
-  $('select').on('change', function() {
- $('.stories ul').empty();
-    //$('img').toggleClass("small-logo", "large-logo",);
-    //$('header').toggleClass("site-header-small", "site-header-large", 2000, "easeOutQuad");
 
+
+$( document ).ready(function() {
+          //console.log('hope');
+
+//$('#sections').heapbox()
+
++$('#sections').heapbox({'onChange':function(){
+         $('.loader').show();
+
+
+ $('.stories ul').empty();
+    
+  
     $( "img" ).removeClass( "large-logo").addClass( "small-logo");
 
     let select = $('#sections').val();
@@ -40,10 +48,17 @@ if (data.results.length === 0) {
 
 };
 
-
+    
 
 });
+
+}
+
 });
+  
+
+
+
 });
 
 

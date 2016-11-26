@@ -1,3 +1,6 @@
+
+
+
 var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     notify = require('gulp-notify'),
@@ -9,6 +12,8 @@ var gulp = require('gulp'),
     jscs = require('gulp-jscs'),
     jshint = require('gulp-jshint'),
     browserSync = require('browser-sync');
+    babel = require('gulp-babel');
+
 
 var plumberErrorHandler = {
    errorHandler: notify.onError({
@@ -19,7 +24,7 @@ var plumberErrorHandler = {
 
 gulp.task('sass', function() {
    gulp.src('./sass/style.scss')
-      .pipe(plumber(plumberErrorHandler))
+     .pipe(plumber(plumberErrorHandler))
       .pipe(sass())
       .pipe(autoprefixer({
          browsers: ['last 2 versions']
@@ -43,6 +48,7 @@ gulp.task('sass', function() {
 
 gulp.task('scripts', function(){
     gulp.src('./js/*.js')
+      .pipe(babel())
       .pipe(uglify())
       .pipe(rename({
         extname: '.min.js'
